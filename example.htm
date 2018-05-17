@@ -1,0 +1,48 @@
+<html lang="en">
+<meta charset="utf-8">
+<header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/IOFilterJS.css">
+<script src="js/IOFilterJS.js"></script>
+</header>
+
+<body>
+    <div>
+        Filter by (must have all selected attributes):<br>
+
+        <button class = "IOFilterJS" filterName ="A" buttonGroup="groupA" filterAttribute="hasFood"> Has Food
+        </button>
+
+        <button class = "IOFilterJS" filterName ="A" buttonGroup="groupA" filterAttribute="hasShoes"> Has Shoes
+        </button>
+    </div>
+
+    <div>
+        Filter by (must have the exclusive selected attribute):<br>
+    <button class = "IOFilterJS" filterName ="A" buttonGroup="groupB" filterAttribute="allCountries" exclusive=""> allCountries
+    </button>
+
+    <button class = "IOFilterJS IOFilterJSdefault" filterName ="A" buttonGroup="groupB" filterAttribute="northKorea" exclusive=""> northKorea
+    </button>
+
+    <button class = "IOFilterJS" filterName ="A" buttonGroup="groupB" filterAttribute="zimbabwe" exclusive=""> zimbabwe
+    </button>
+    </div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries northKorea hasShoes hasFood">Chon</div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries northKorea hasFood">Kim</div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries northKorea hasShoes">Chao</div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries zimbabwe">Kembo</div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries zimbabwe hasShoes">Mutare</div>
+
+    <div class="IOFilterJS" filterName ="A" IOFilterJS="allCountries zimbabwe hasFood">Chinhoyi</div>
+
+
+</body>
+
+
+</html>

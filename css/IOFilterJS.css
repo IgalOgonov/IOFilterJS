@@ -1,0 +1,15 @@
+
+.IOFilterJS-selected{
+    display: inherit;
+}
+
+.IOFilterJS-hidden{
+    display: none;
+}
+
+button.IOFilterJS-active{
+    filter:contrast(200%);
+}
+
+button.IOFilterJS-inactive{
+}
